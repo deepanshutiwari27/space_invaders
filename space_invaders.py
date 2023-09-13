@@ -18,20 +18,20 @@ VEL = 5
 MAX_BULLETS =  3
 BULLET_VEL = 10
 
-YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join('Assets', 'spaceship_yellow.png'))
+YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join('Assets', 'images', 'spaceship_yellow.png'))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(YELLOW_SPACESHIP_IMAGE, (SPACE_SHIP_WIDTH, SPACE_SHIP_HEIGHT)), 90)
 
-RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join('Assets', 'spaceship_red.png'))
+RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join('Assets', 'images', 'spaceship_red.png'))
 RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(RED_SPACESHIP_IMAGE, (SPACE_SHIP_WIDTH, SPACE_SHIP_HEIGHT)), 270)
 
-SPACE = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'space.png')), (WIDTH, HEIGHT))
+SPACE = pygame.transform.scale(pygame.image.load(os.path.join('Assets','images' ,'space.png')), (WIDTH, HEIGHT))
 
 BLACK = (0,0,0)
 
 BORDER = pygame.Rect(WIDTH//2-5, 0, 10, HEIGHT)
 
-BULLET_HIT_SOUND = pygame.mixer.Sound(os.path.join('Assets', 'Grenade+1.mp3'))
-BULLET_FIRE_SOUND = pygame.mixer.Sound(os.path.join('Assets', 'Gun+Silencer.mp3'))
+BULLET_HIT_SOUND = pygame.mixer.Sound(os.path.join('Assets','sound', 'Grenade1.wav'))
+BULLET_FIRE_SOUND = pygame.mixer.Sound(os.path.join('Assets','sound', 'GunSilencer.wav'))
 
 HEALTH_FONT = pygame.font.SysFont('comicsans', 40)
 WINNER_FONT = pygame.font.SysFont('comicsans', 100)
